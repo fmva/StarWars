@@ -31,7 +31,9 @@ class Header extends Component {
     const listItems = arr.map((item, key) => (
       <li key={key}>
         <div>
-          <Link onClick={this.handlerClickMenu} to={`/${item.path}`}>{item.title}</Link>
+          <Link onClick={this.handlerClickMenu} to={`/${item.path}`}>
+            {item.title}
+          </Link>
         </div>
       </li>
     ));
