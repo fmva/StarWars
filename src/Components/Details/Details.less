@@ -1,0 +1,44 @@
+@import "../../Less/overall.less";
+
+ul.detail-main {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  color: #000;
+  font-size:1.3em;
+}
+
+.detail-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 4px 0;
+  @media @phone {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.detail-column{
+  width:50%;
+  @media @phone {
+    width: auto;
+  }
+}
+
+.detail-row div {
+  padding:0 5px;
+}
+
+.detail-column span{
+  padding: 2px;
+}
+
+.detail-title{
+  font-weight: bold;
+}

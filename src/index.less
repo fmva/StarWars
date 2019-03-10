@@ -1,0 +1,72 @@
+@import "~antd/dist/antd.less";
+@import "./Less/overall.less";
+
+* {
+  box-sizing: border-box;
+}
+
+html,body{
+  padding:0;
+  margin:0;
+  height: 100%;
+ }
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4F6F9;
+  font-size: 1em;
+  min-width: 650px;
+  height: 100%;
+  overflow: hidden;
+  @media @phone {
+    min-width:280px;
+  }
+}
+
+h2{
+  padding:3px 0;
+  margin:0;
+  font-weight: bold;
+}
+
+.height-100{
+  height:inherit;
+}
+
+.phone-visible-none {
+  display:block;
+  @media @phone {
+    display: none !important;
+  }
+}
+
+.phone-visible-inline-none {
+  display:inline-block;
+  @media @phone {
+    display: none !important;
+  }
+}
+
+.phone-visible_inline {
+  display:none !important;
+  @media @phone {
+    display: inline-block !important;
+  }
+}
+
+.phone-visible-block {
+  display:none;
+  @media @phone {
+    display: block !important;;
+  }
+}
+
+.main-size{
+  max-width: @main-max-width;
+  margin:0 auto;
+}
+
+header {
+  background-color: #439cff;
+  height:@header-height;
+}

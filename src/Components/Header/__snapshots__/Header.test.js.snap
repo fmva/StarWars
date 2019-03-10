@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <Route>
+      <Header
+        menu={
+          Array [
+            Object {
+              "path": "path 1",
+              "title": "title 1",
+            },
+            Object {
+              "path": "path 2",
+              "title": "title 2",
+            },
+          ]
+        }
+        onClickMenu={[MockFunction]}
+      >
+        <header>
+          <div
+            className="main-size header-menu"
+          >
+            <ul
+              className="menu-list phone-visible-none"
+            >
+              <li
+                key="0"
+              >
+                <div>
+                  <Link
+                    replace={false}
+                    to="/path 1"
+                  >
+                    <a
+                      href="/path 1"
+                      onClick={[Function]}
+                    >
+                      title 1
+                    </a>
+                  </Link>
+                </div>
+              </li>
+              <li
+                key="1"
+              >
+                <div>
+                  <Link
+                    replace={false}
+                    to="/path 2"
+                  >
+                    <a
+                      href="/path 2"
+                      onClick={[Function]}
+                    >
+                      title 2
+                    </a>
+                  </Link>
+                </div>
+              </li>
+            </ul>
+            <div
+              className="icon-bars-block phone-visible-block"
+            >
+              <i
+                className="icon-bars"
+                onClick={[Function]}
+                title="Menu"
+              />
+            </div>
+            <img
+              alt="StarWars"
+              className="sw-logo"
+              src="Star-Wars-Logo.png"
+            />
+          </div>
+          <withConfigConsumer(Drawer)
+            className="list-drawer"
+            closable={false}
+            onClose={[Function]}
+            placement="left"
+            visible={false}
+          >
+            <Drawer
+              className="list-drawer"
+              closable={false}
+              getPrefixCls={[Function]}
+              height={256}
+              level={null}
+              mask={true}
+              maskClosable={true}
+              onClose={[Function]}
+              placement="left"
+              prefixCls="ant-drawer"
+              renderEmpty={[Function]}
+              visible={false}
+              width={256}
+            >
+              <Drawer
+                className="list-drawer"
+                closable={false}
+                duration=".3s"
+                ease="cubic-bezier(0.78, 0.14, 0.15, 0.86)"
+                firstEnter={false}
+                getContainer="body"
+                getPrefixCls={[Function]}
+                handler={false}
+                level={null}
+                mask={true}
+                maskClosable={true}
+                maskStyle={Object {}}
+                onChange={[Function]}
+                onClose={[Function]}
+                onHandleClick={[Function]}
+                onMaskClick={[Function]}
+                open={false}
+                placement="left"
+                prefixCls="ant-drawer"
+                renderEmpty={[Function]}
+                showMask={true}
+                style={
+                  Object {
+                    "transform": undefined,
+                    "zIndex": undefined,
+                  }
+                }
+                visible={false}
+                width={256}
+                wrapperClassName=""
+              />
+            </Drawer>
+          </withConfigConsumer(Drawer)>
+        </header>
+      </Header>
+    </Route>
+  </Router>
+</BrowserRouter>
+`;

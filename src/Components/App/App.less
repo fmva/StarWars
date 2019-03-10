@@ -1,0 +1,38 @@
+@import "../../Less/overall.less";
+
+main {
+  display: block;
+}
+
+.main-menu{
+  height: calc(100% - @header-height);
+  border: 1px solid #cfd3e2;
+  box-shadow: 0 0 6px #a0a2a9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  /*height:400px;*/
+  @media @phone {
+    display: block;
+   }
+}
+
+.spin-loading{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: #0e191c;
+  opacity: 0.8;
+  z-index: 9999;
+}
+
+.spin-loading-inner{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+

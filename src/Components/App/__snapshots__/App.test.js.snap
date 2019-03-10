@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Компонент App с входными данными для актеров 1`] = `
+<div
+  className="height-100"
+>
+  <Header
+    isDrawerMenu={false}
+    menu={
+      Array [
+        Object {
+          "path": "people",
+          "title": "People",
+        },
+        Object {
+          "path": "films",
+          "title": "Films",
+        },
+        Object {
+          "path": "starships",
+          "title": "Starships",
+        },
+      ]
+    }
+    onClickMenu={[Function]}
+  />
+  <main
+    className="main-menu main-size"
+  >
+    <Filter
+      filterAdmitted={
+        Array [
+          Object {
+            "name": "hair_color",
+            "title": "Hairs",
+            "value": "",
+          },
+          Object {
+            "name": "birth_year",
+            "title": "Birth year",
+            "value": "",
+          },
+          Object {
+            "name": "eye_color",
+            "title": "Eye color",
+            "value": "",
+          },
+        ]
+      }
+      filterInputs={
+        Array [
+          Object {
+            "name": "hair_color",
+            "title": "Hairs",
+            "value": "",
+          },
+          Object {
+            "name": "birth_year",
+            "title": "Birth year",
+            "value": "",
+          },
+          Object {
+            "name": "eye_color",
+            "title": "Eye color",
+            "value": "",
+          },
+        ]
+      }
+      mobileShowFilter={false}
+      onClickAdmit={[Function]}
+      onClickMobileHeader={[Function]}
+      onClickReset={[Function]}
+      saveFilterData={[Function]}
+    />
+    <SubjectsList
+      isPaginationButton={true}
+      onChangeSearch={[Function]}
+      onClickItem={[Function]}
+      onPagination={[Function]}
+      onResetSearchValue={[Function]}
+      searchValue=""
+      setPaginationDiv={[Function]}
+      subjects={
+        Array [
+          Object {
+            "birth_year": "19BBY",
+            "eye_color": "blue",
+            "gender": "male",
+            "hair_color": "blond",
+            "height": "172",
+            "mass": "77",
+            "name": "Luke Skywalker",
+            "skin_color": "fair",
+          },
+          Object {
+            "birth_year": "112BBY",
+            "eye_color": "yellow",
+            "gender": "n/a",
+            "hair_color": "n/a",
+            "height": "167",
+            "mass": "75",
+            "name": "C-3PO",
+            "skin_color": "gold",
+          },
+        ]
+      }
+      title="People"
+      titleSubjectField="name"
+    />
+  </main>
+  <div
+    className="spin-loading"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <div
+      className="spin-loading-inner"
+    >
+      <Spin
+        size="large"
+        spinning={false}
+        tip="Loading..."
+        wrapperClassName=""
+      />
+    </div>
+  </div>
+  <Details
+    details={Array []}
+    onClose={[Function]}
+  />
+</div>
+`;
