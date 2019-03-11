@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, Drawer } from 'antd';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Mobile from '../../Utils/Mobile';
 import './Header.less';
 import Logo from './Img/Star-Wars-Logo.png';
 
@@ -45,7 +46,9 @@ class Header extends Component {
    * click drawer menu
    */
   handlerClickMenu() {
-    this.props.onClickMenu();
+    if (Mobile.mobileCheck()) {
+      this.props.onClickMenu();
+    }
   }
 
   render() {
