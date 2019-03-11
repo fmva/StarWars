@@ -305,9 +305,7 @@ class App extends Component {
 
     this.scrollableDiv.current.scrollTop =
       this.scrollableDiv.current.scrollHeight - Settings.getSettings('scrollOffset');
-    const isNewList = Utils.isEqualAdmittedFilter(this.state.filter, this.state.filterAdmitted)
-      ? false
-      : true;
+    const isNewList = !Utils.isEqualAdmittedFilter(this.state.filter, this.state.filterAdmitted);
     await this.requestItemData(isNewList, Settings.getSettings('timeoutPagination'));
   }
 
@@ -317,6 +315,11 @@ class App extends Component {
    */
   async search(evt) {
     const value = evt.target.value;
+
+    if (this.state.loading) {
+      await this.setState({ searchValue: this.state.searchValue });
+      return;
+    }
 
     await this.setState({ searchValue: value });
     await this.requestItemData(true, Settings.getSettings('timeoutPrinting'));
