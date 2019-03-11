@@ -58,7 +58,6 @@ class App extends Component {
 
   async componentDidUpdate(prevProps) {
     if (this.props.namePage !== prevProps.namePage) {
-      await this.setState({ isDrawerMenu: false });
       await this.loadData(this.props.namePage);
     }
   }
