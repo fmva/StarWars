@@ -235,7 +235,7 @@ class App extends Component {
       return filterDescription.every(itemFilter => {
         return (
           itemSubject[itemFilter.name] &&
-          itemSubject[itemFilter.name].toString().includes(itemFilter.value.trim())
+          itemSubject[itemFilter.name].toString().toUpperCase().includes(itemFilter.value.trim().toUpperCase())
         );
       });
     });
