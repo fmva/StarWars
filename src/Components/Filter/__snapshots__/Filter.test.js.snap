@@ -403,6 +403,7 @@ exports[` 1`] = `
     </div>
     <Form
       className="filter-fields phone-visible-none"
+      colon={true}
       hideRequiredMark={false}
       layout="horizontal"
       onSubmit={[Function]}
@@ -624,6 +625,7 @@ exports[`Filter Компонент Filter c входными данными 1`] 
   </div>
   <Form
     className="filter-fields phone-visible-none"
+    colon={true}
     hideRequiredMark={false}
     layout="horizontal"
     onSubmit={[Function]}

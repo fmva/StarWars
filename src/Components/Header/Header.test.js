@@ -1,6 +1,7 @@
 import Header from './Header';
 import { mount } from 'enzyme';
 import React from 'react';
+import Mobile from '../../Utils/Mobile';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 const menu = [
@@ -63,8 +64,13 @@ describe('Header', () => {
     'Допустим пользователь нажимает на иконку меню в мобильной версии, ' +
       'тогда должно сработать событие onClickMenu',
     () => {
+      Mobile.mobileCheck = jest.fn();
+      Mobile.mobileCheck.mockReturnValue(true);
+
       wrapper.find('i.icon-bars').simulate('click');
       expect(onClickMenu.mock.calls.length).toBe(1);
+
+      Mobile.mobileCheck.mockReset();
     }
   );
 });
